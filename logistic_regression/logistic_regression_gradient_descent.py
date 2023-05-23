@@ -29,7 +29,7 @@ b1 = 0.01
 b0 = 0.01
 L = .01
 
-for j in range(10_000):
+for _ in range(10_000):
     b1 += d_b1(b1, b0) * L
     b0 += d_b0(b1, b0) * L
 

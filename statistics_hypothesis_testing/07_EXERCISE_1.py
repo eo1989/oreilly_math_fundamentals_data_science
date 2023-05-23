@@ -14,8 +14,7 @@ sample = [1, 3, 2, 5, 7, 0, 2, 3]
 
 def variance_sample(values):
     mean = sum(values) / len(values)
-    var = sum((v - mean) ** 2 for v in values) / len(values)
-    return var
+    return sum((v - mean) ** 2 for v in values) / len(values)
 
 def std_dev_sample(values):
     return sqrt(variance_sample(values))

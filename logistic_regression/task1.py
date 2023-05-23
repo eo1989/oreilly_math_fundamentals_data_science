@@ -20,8 +20,7 @@ b0 = -3.1044
 b1 = 0.6783
 
 def logistic_function(x):
-    p = 1.0 / (1.0001 + math.exp(-(b0 + b1 * x)))
-    return p
+    return 1.0 / (1.0001 + math.exp(-(b0 + b1 * x)))
 
 # Calculate the total likelihood
 total_likelihood = ? 

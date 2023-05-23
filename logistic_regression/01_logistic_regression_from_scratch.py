@@ -26,12 +26,10 @@ b1 = .01
 # calculate maximum likelihood
 
 def predict_probability(x):
-    p = 1.0 / (1.0001 + math.exp(-(b0 + b1 * x)))
-    return p
+    return 1.0 / (1.0001 + math.exp(-(b0 + b1 * x)))
 
 
-for i in range(1_000_000):
-
+for _ in range(1_000_000):
     # Select b0 or b1 randomly, and adjust it randomly
     random_b = random.choice(range(2))
 
@@ -47,7 +45,7 @@ for i in range(1_000_000):
     false_estimates = sum(math.log(1.0 - predict_probability(p.x)) for p in points if p.y == 0.0)
 
     total_likelihood = true_estimates + false_estimates
-    
+
     # you can consolidate true and false likelihoods using this one line
     # total_likelihood = sum(math.log(predict_probability(p.x)**p.y * (1.0 - predict_probability(p.x))**(1-p.y)) for p in points)
 

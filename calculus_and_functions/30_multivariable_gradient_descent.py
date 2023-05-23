@@ -17,7 +17,7 @@ x = 0   # we will find the x for the minimum
 y = 0   # we will find the y for the minimum
 z = 0   # we will find the z for the minimum
 
-for i in range(epochs):
+for _ in range(epochs):
     d_x = dx_f(x) # get x slope
     d_y = dy_f(y) # get y slope
     d_z = dz_f(z) # get z slope

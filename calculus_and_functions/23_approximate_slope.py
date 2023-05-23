@@ -1,6 +1,5 @@
 def derivative_x(f, x, step_size):
-    m = (f(x + step_size) - f(x)) / ((x + step_size) - x)
-    return m
+    return (f(x + step_size) - f(x)) / ((x + step_size) - x)
 
 def my_function(x):
     return x ** 2

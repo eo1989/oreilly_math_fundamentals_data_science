@@ -20,7 +20,7 @@ model.fit(X, Y)
 
 result = model.score(X_test, Y_test)
 
-print("MODEL SCORE: {}".format(result))
+print(f"MODEL SCORE: {result}")
 
 # Interact and test with new employee data
 def predict(age, video_gamer, likes_ice_cream, minority):
