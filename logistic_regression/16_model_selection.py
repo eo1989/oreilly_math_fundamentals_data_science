@@ -16,8 +16,7 @@ X = df.values[:, :-1]
 Y = df.values[:, -1]
 
 # prepare models
-models = []
-models.append(('Logistic Regression', LogisticRegression(solver='liblinear')))
+models = [('Logistic Regression', LogisticRegression(solver='liblinear'))]
 models.append(('Linear Discriminant Analysis', LinearDiscriminantAnalysis()))
 models.append(('K-neighbors', KNeighborsClassifier()))
 models.append(('Decision Tree', DecisionTreeClassifier()))

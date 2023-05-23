@@ -15,8 +15,8 @@ decision_t = t.ppf(.05, df=n-1)
 # -1.261829652996841
 t_value = t_test(sample_mean,sample_std,pop_mean, n)
 
-print("DECISION T: {}".format(decision_t))
-print("TEST T: {}".format(t_value))
+print(f"DECISION T: {decision_t}")
+print(f"TEST T: {t_value}")
 
 # FAILED TO REJECT H0
 if decision_t <= t_value:

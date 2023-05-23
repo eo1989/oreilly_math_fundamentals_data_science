@@ -23,8 +23,7 @@ def my_function(x):
 
 
 def approximate_slope_x(f, x, step_size):
-    m = (f(x + step_size) - f(x)) / ((x + step_size) - x)
-    return m
+    return (f(x + step_size) - f(x)) / ((x + step_size) - x)
 
 
 slope_at_2 = approximate_slope_x(my_function, 2, ?)

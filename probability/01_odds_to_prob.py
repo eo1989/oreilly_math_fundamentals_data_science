@@ -9,4 +9,4 @@ p_x = .75
 o_x = prob_to_odds(p_x)
 
 # prints ODDS: 3.0
-print("ODDS: {}".format(o_x))
+print(f"ODDS: {o_x}")

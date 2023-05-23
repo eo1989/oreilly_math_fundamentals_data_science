@@ -16,7 +16,7 @@ inverse = A.inv()
 identity = inverse * A
 
 # prints Matrix([[-1/2, 0, 1/3], [11/2, -2, -4/3], [-2, 1, 1/3]])
-print("INVERSE: {}".format(inverse))
+print(f"INVERSE: {inverse}")
 
 # prints Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])
-print("IDENTITY: {}".format(identity))
+print(f"IDENTITY: {identity}")

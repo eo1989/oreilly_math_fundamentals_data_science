@@ -14,5 +14,5 @@ x = 8.0
 z = z_score(x, mean, std_dev)
 back_to_x = z_to_x(z, mean, std_dev)
 
-print("Z-Score: {}".format(z))  # Z-Score: 2.0
-print("Back to X: {}".format(back_to_x))  # Back to X: 8.0
+print(f"Z-Score: {z}")
+print(f"Back to X: {back_to_x}")

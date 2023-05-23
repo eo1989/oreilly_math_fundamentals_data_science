@@ -10,7 +10,6 @@ def mode(values):
         counts[s] += 1
 
     max_count = max(counts.values())
-    modes = [v for v in set(values) if counts[v] == max_count]
-    return modes
+    return [v for v in set(values) if counts[v] == max_count]
 
 print(mode(sample))
